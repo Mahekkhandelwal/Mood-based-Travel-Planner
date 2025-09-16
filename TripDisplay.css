@@ -1,0 +1,38 @@
+.trip-display {
+  background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent light background */
+  color: #333; /* Darker text for readability on light background */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  margin-top: 30px;
+  max-width: 900px; /* Limit width for better presentation */
+  width: 100%;
+}
+
+.trip-display h2, .trip-display h3 {
+  color: #2c3e50;
+}
+
+.trip-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted column width */
+  gap: 25px;
+  text-align: left;
+}
+
+.section {
+  background-color: rgba(255, 255, 255, 0.95); /* Even lighter background for sections */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section ul {
+  list-style-type: disc; /* Use bullets for lists */
+  margin-left: 20px;
+}
+
+.section li {
+  margin-bottom: 5px;
+  line-height: 1.5;
+}

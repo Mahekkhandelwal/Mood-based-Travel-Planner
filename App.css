@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center; /* Centers horizontally */
+  justify-content: flex-end; /* Pushes content to the bottom of the page */
+  padding: 20px;
+  
+  /* Background Image Properties */
+  background-image: url('./components/travel-collage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.mood-selector {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px; /* Provides space from the bottom edge */
+  max-width: 600px;
+}
+
+.mood-selector h2 {
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.mood-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.mood-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.mood-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}

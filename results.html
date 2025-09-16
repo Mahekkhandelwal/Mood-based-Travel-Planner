@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Trip Plan to {{ destination }}</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        
+        /* Set a solid background color */
+        background-color: #f4f7f9; /* Change this color to your preference */
+        
+        color: #333; /* Dark text for readability */
+    }
+    .container {
+        max-width: 900px;
+        margin: auto;
+        background-color: #ffffff; /* Solid white container */
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        color: #333;
+    }
+    h1, h2, h3 {
+        color: #0056b3;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .section {
+        /* CHANGE THIS LINE */
+        background-color: #f0f0f0; /* A very light gray for sections */
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    li {
+        margin-bottom: 8px;
+        padding: 5px;
+        background-color: #e9ecef;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body >
+    <div class="container" style="background-color: #516c89;">
+        <h1>Your Trip Plan to {{ destination }} ✈️</h1>
+        
+        <h2>Current Weather</h2>
+        <p><strong>Temperature:</strong> {{ weather.temperature }}</p>
+        <p><strong>Condition:</strong> {{ weather.condition }}</p>
+
+        <h2>Sample Itinerary</h2>
+        <ul>
+            {% for item in itinerary %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>Top Attractions</h2>
+        <ul>
+            {% for attraction in attractions %}
+                <li>{{ attraction.name }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>Hotel Suggestions</h2>
+        <ul>
+            {% for hotel in hotels %}
+                <li>{{ hotel.name }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

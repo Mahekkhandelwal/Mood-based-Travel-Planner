@@ -1,0 +1,27 @@
+.mood-selector {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.mood-selector h2 {
+  color: #ffffff; /* Ensure text is visible */
+}
+
+.mood-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.mood-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
